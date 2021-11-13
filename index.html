@@ -41,7 +41,7 @@
   <header id="header" class="header-tops">
     <div class="container">
       <div>
-        <img src="./assets/img/userlmn_a686e6feb21da255428a7134a3ef91ea.png" alt="Test" height="450px" width="580px" >
+        <img src="./assets/img/userlmn_a686e6feb21da255428a7134a3ef91ea.png" id="logo_img" alt="Test" height="450px" width="580px" >
       </div>
 
     <!-- <img src="assets/img/25-yer-anniversary-1080x675.jpg" height="100px" width="100px"> -->
@@ -49,7 +49,7 @@
       <!-- <h1><a href="index.html">RAINBOW PAINTING</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h1><a href="index.html"></a>We <div style="
+      <h1 id="tagLine" ><a href="index.html"></a>We <div style="
         background: -webkit-linear-gradient(#eee, #333);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;"> Colour </div> Your <span>Dreams</span></h1>
@@ -59,13 +59,13 @@
           <li class="active"><a href="index.html">Home</a></li>
           <!-- <li><a href="#resume">Resume</a></li> -->
           <!-- <li><a href="#services">Services</a></li> -->
-          <li><a href="#portfolio">Works</a></li>
+          <li><a onclick="hideImage()" href="#portfolio">Works</a></li>
           <!-- <li><a href="#history">History</a></li> -->
-          <li><a href="#founder">Founder</a></li>
+          <li><a onclick="hideImage()" href="#founder">Founder</a></li>
 
           <!-- <li><a href="#about">About</a></li> -->
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a onclick="hideImage()" href="#about">About</a></li>
+          <li><a onclick="hideImage()" href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -545,6 +545,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function tend() {
+        document.getElementById('my').style.visibility='visible';
+      }
+      function hideImage() {
+        document.getElementById('logo_img').style.visibility='hidden';
+        document.getElementById('tagLine').style.visibility='hidden';
+      }
+  </script>
 
 </body>
 
