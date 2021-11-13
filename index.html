@@ -53,6 +53,7 @@
         background: -webkit-linear-gradient(#eee, #333);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;"> Colour </div> Your <span>Dreams</span></h1>
+      <h1 id="tagLine2" style="visibility: hidden;"></a>We Colour Your Dreams</h1>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -550,8 +551,9 @@
         document.getElementById('my').style.visibility='visible';
       }
       function hideImage() {
-        document.getElementById('logo_img').style.visibility='hidden';
-        document.getElementById('tagLine').style.visibility='hidden';
+        document.getElementById('logo_img').style.display='none';
+        document.getElementById('tagLine').style.display='none';
+        document.getElementById('tagLine2').style.visibility='visible';
       }
   </script>
 
